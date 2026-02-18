@@ -1,0 +1,121 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-heading: var(--font-space-grotesk), system-ui, sans-serif;
+
+  /* Dark graphite theme with copper/gold accents */
+  --color-background: #1c1c1e;
+  --color-foreground: #f0ebe3;
+
+  --color-card: #2a2a2e;
+  --color-card-foreground: #f0ebe3;
+
+  --color-popover: #2a2a2e;
+  --color-popover-foreground: #f0ebe3;
+
+  /* Primary: Copper Gold */
+  --color-primary: #c8913a;
+  --color-primary-foreground: #1c1c1e;
+
+  /* Secondary: Dark graphite lighter */
+  --color-secondary: #35353a;
+  --color-secondary-foreground: #f0ebe3;
+
+  /* Muted: Subtle dark */
+  --color-muted: #25252a;
+  --color-muted-foreground: #9a9a9a;
+
+  /* Accent: Copper Gold */
+  --color-accent: #c8913a;
+  --color-accent-foreground: #1c1c1e;
+
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: #3a3a40;
+  --color-input: #3a3a40;
+  --color-ring: #c8913a;
+
+  --radius: 0.75rem;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Sidebar tokens */
+  --color-sidebar: #25252a;
+  --color-sidebar-foreground: #f0ebe3;
+  --color-sidebar-primary: #c8913a;
+  --color-sidebar-primary-foreground: #1c1c1e;
+  --color-sidebar-accent: #35353a;
+  --color-sidebar-accent-foreground: #f0ebe3;
+  --color-sidebar-border: #3a3a40;
+  --color-sidebar-ring: #c8913a;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+  }
+}
+
+/* Copper gold gradient */
+.gradient-copper {
+  background: linear-gradient(135deg, #c8913a 0%, #d4af37 100%);
+}
+
+.text-copper {
+  color: #c8913a;
+}
+
+.border-copper {
+  border-color: #c8913a;
+}
+
+/* Smooth section animations */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 5000px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-down {
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
