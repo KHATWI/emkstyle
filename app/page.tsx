@@ -256,7 +256,7 @@ export default function HomePage() {
             id="business"
             sectionTitle="Business"
             sectionSubtitle="Marketing Digital, Inteligencia Artificial, Ventas y Automatizacion para emprendedores"
-            coverImage="/cover-business.jpg"
+            coverImage="/cover-business.png"
             coverAlt="Emprendedores trabajando en oficina moderna"
             courses={businessCourses}
           />
@@ -265,7 +265,7 @@ export default function HomePage() {
             id="alma"
             sectionTitle="By Alma"
             sectionSubtitle="Autoconocimiento, bienestar, yoga, meditacion y espiritualidad practica para una vida plena"
-            coverImage="/cover-alma.jpg"
+            coverImage="/cover-alma.png"
             coverAlt="Mujer meditando en la naturaleza"
             courses={almaCourses}
           />
@@ -274,7 +274,7 @@ export default function HomePage() {
             id="kids"
             sectionTitle="Kids"
             sectionSubtitle="Educacion, estimulacion, juegos y aprendizaje consciente para ninos y padres formadores"
-            coverImage="/cover-kids.jpg"
+            coverImage="/cover-kids.png"
             coverAlt="Ninos felices aprendiendo y jugando"
             courses={kidsCourses}
           />
