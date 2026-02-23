@@ -6,7 +6,6 @@ import { CourseCard } from "@/components/course-card"
 
 interface Course {
   title: string
-  description: string
   image: string
   link: string
 }
@@ -44,16 +43,15 @@ export function CollapsibleSection({
             alt={coverAlt}
             className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1c1c1e] via-[#1c1c1e]/70 to-transparent" />
-          <div className="absolute inset-0 flex flex-col items-center justify-end px-6 pb-8 text-center">
-            <h2 className="mb-2 text-3xl font-bold text-[#f0ebe3] md:text-4xl lg:text-5xl">
-              {sectionTitle}
-            </h2>
-            <p className="mb-4 max-w-2xl text-balance text-sm text-[#f0ebe3]/80 md:text-base">
-              {sectionSubtitle}
-            </p>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1c1c1e]/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 flex flex-col items-center justify-end px-6 pb-6 text-center">
+            {sectionSubtitle && (
+              <p className="mb-4 max-w-2xl text-balance text-sm text-[#f0ebe3]/80 md:text-base">
+                {sectionSubtitle}
+              </p>
+            )}
             <div
-              className={`flex h-10 w-10 items-center justify-center rounded-full border border-[#c8913a]/40 bg-[#c8913a]/10 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+              className={`flex h-10 w-10 items-center justify-center rounded-full border border-[#c8913a]/40 bg-[#c8913a]/10 backdrop-blur-sm transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
             >
               <ChevronDown className="h-5 w-5 text-[#c8913a]" />
             </div>
@@ -68,7 +66,6 @@ export function CollapsibleSection({
             <CourseCard
               key={course.title}
               title={course.title}
-              description={course.description}
               image={course.image}
               link={course.link}
               index={index}

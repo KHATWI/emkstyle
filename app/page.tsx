@@ -6,85 +6,71 @@ import { CollapsibleSection } from "@/components/collapsible-section"
 const businessCourses = [
   {
     title: "CRM Inteligente: Triplica tus Ventas y Gestiona tus Clientes",
-    description: "Optimiza la gestion de clientes y dispara tus ventas con herramientas inteligentes.",
     image: "/course-crm.jpg",
     link: "https://go.hotmart.com/I104388030E?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Tus primeras ventas",
-    description: "Estrategias practicas para conseguir tus primeros clientes rapidamente.",
     image: "/course-first-sales.jpg",
     link: "https://go.hotmart.com/J104388385O?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "De cero a tienda online",
-    description: "Guia paso a paso para crear y lanzar tu tienda sin experiencia tecnica.",
     image: "/course-online-store.jpg",
     link: "https://go.hotmart.com/B104388791N?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Como vender mas por Instagram",
-    description: "Convierte seguidores en clientes con estrategias efectivas de marketing digital.",
     image: "/course-instagram.jpg",
     link: "https://go.hotmart.com/O103116912W?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Convierte a WhatsApp en una maquina de vender",
-    description: "Automatiza ventas y atencion al cliente directamente por WhatsApp.",
     image: "/course-whatsapp.jpg",
     link: "https://go.hotmart.com/T103117325A?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Crea imagenes y videos para tus productos con IA",
-    description: "Domina herramientas de IA que generan contenido visual impactante para tus productos.",
     image: "/course-ai-images.jpg",
     link: "https://go.hotmart.com/L103210551Y?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Curso de marketing digital enfocado a redes sociales y ecommerce",
-    description: "Aprende estrategias digitales para crecer tu marca en internet y vender online.",
     image: "/course-marketing-digital.jpg",
     link: "https://go.hotmart.com/U103211006L?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "IA Bot vende en automatico",
-    description: "Implementa chatbots con IA que atienden clientes y cierran ventas por ti.",
     image: "/course-chatbot.jpg",
     link: "https://go.hotmart.com/S104103717J?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Guia generativa para emprendedores y vendedores",
-    description: "Automatiza procesos, acelera tu negocio y vende mas con IA generativa.",
     image: "/course-ai-generativa.jpg",
     link: "https://go.hotmart.com/P103210353Q?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "IA para negocios y emprendedores",
-    description: "Aplica inteligencia artificial en tus procesos y estrategias empresariales.",
     image: "/course-ia-negocios.jpg",
     link: "https://go.hotmart.com/K103188787E?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Instagram para negocios",
-    description: "Tecnicas especializadas para destacar tu negocio y generar ventas.",
     image: "/course-ig-negocios.jpg",
     link: "https://go.hotmart.com/E104103470S?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Marketing digital",
-    description: "Bases esenciales para atraer clientes y aumentar tu presencia digital.",
     image: "/course-mkt-digital.jpg",
     link: "https://go.hotmart.com/E103116814T?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Paso a paso en dropshipping",
-    description: "Aprende a iniciar un negocio de dropshipping rentable paso a paso.",
     image: "/course-dropshipping.jpg",
     link: "https://go.hotmart.com/J103211217J?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Crea Ebooks rentables con IA desde tu celular",
-    description: "Genera y vende ebooks usando IA directamente desde tu smartphone.",
     image: "/course-ebooks.jpg",
     link: "https://go.hotmart.com/Q103210709U?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
@@ -93,61 +79,51 @@ const businessCourses = [
 const almaCourses = [
   {
     title: "200 plantas medicinales mas eficientes",
-    description: "Conoce propiedades curativas y aprende a usarlas en remedios caseros.",
     image: "/course-plantas.jpg",
     link: "https://go.hotmart.com/H103211676Q?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Curso de Angeles & Arcangeles",
-    description: "Ensenanzas espirituales para guiar tu vida con luz y proposito.",
     image: "/course-angeles.jpg",
     link: "https://go.hotmart.com/B104388791N?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Alimentacion consciente y sin gluten",
-    description: "Habitos y recetas para una vida mas saludable y energetica.",
     image: "/course-alimentacion.jpg",
     link: "https://go.hotmart.com/V103211590H?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Curso de pilates",
-    description: "Mejora tu condicion fisica y mental desde casa.",
     image: "/course-pilates.jpg",
     link: "https://go.hotmart.com/P104103740X?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Desarrolla tu potencial",
-    description: "Tecnicas para potenciar tus habilidades y alcanzar tus metas.",
     image: "/course-potencial.jpg",
     link: "https://go.hotmart.com/I103211728N?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "El arte de manifestar: crear tu realidad",
-    description: "Aprende a manifestar tus deseos mediante practicas conscientes.",
     image: "/course-manifestar.jpg",
     link: "https://go.hotmart.com/W103211329F?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "RECONQUISTA de los Heraldos del Evangelio",
-    description: "Transformacion personal y espiritual con ensenanzas de los Heraldos.",
     image: "/course-heraldos.jpg",
     link: "https://go.hotmart.com/R104388984K?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Elimina los sintomas fisicos de la ansiedad",
-    description: "Practicas efectivas para reducir estres y ansiedad diariamente.",
     image: "/course-ansiedad.jpg",
     link: "https://go.hotmart.com/T103211346B?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Manual de amor propio y transformacion personal",
-    description: "Guia practica para fortalecer tu autoestima y confianza.",
     image: "/course-amor-propio.jpg",
     link: "https://go.hotmart.com/X103211385J?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Yoga para controlar tus emociones",
-    description: "Rutinas de yoga y respiracion para equilibrar emociones.",
     image: "/course-yoga.jpg",
     link: "https://go.hotmart.com/S103211445C?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
@@ -156,49 +132,41 @@ const almaCourses = [
 const kidsCourses = [
   {
     title: "Videojuego de las tablas de multiplicar",
-    description: "Aprende multiplicacion jugando y divirtiendote.",
     image: "/course-multiplicar.jpg",
     link: "https://go.hotmart.com/N103276919G?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Ingles para ninos",
-    description: "Curso interactivo para aprender ingles de forma divertida.",
     image: "/course-ingles-ninos.jpg",
     link: "https://go.hotmart.com/R104389100O?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Guia de estimulacion temprana para bebes",
-    description: "Actividades para desarrollo cognitivo y motor.",
     image: "/course-estimulacion.jpg",
     link: "https://go.hotmart.com/Q103211795C?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Guias de estimulacion, juegos y actividades 0 a 5 anos",
-    description: "Ideas creativas para aprendizaje en casa.",
     image: "/course-guias-juegos.jpg",
     link: "https://go.hotmart.com/U104389296R?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Matematicas divertidas en casa",
-    description: "Actividades didacticas para aprender jugando.",
     image: "/course-mates-divertidas.jpg",
     link: "https://go.hotmart.com/Y103276898N?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Venciendo el TDAH desde casa",
-    description: "Estrategias efectivas para padres de ninos con TDAH.",
     image: "/course-tdah.jpg",
     link: "https://go.hotmart.com/K104389199C?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "Ninos felices, enfocados y emocionalmente fuertes",
-    description: "Recursos para concentracion y estabilidad emocional.",
     image: "/course-ninos-felices.jpg",
     link: "https://go.hotmart.com/Y103211904C?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
   {
     title: "100 Snacks Saludables para Ninos con TDAH",
-    description: "Recetas faciles y nutritivas para ninos con TDAH.",
     image: "/course-snacks.jpg",
     link: "https://go.hotmart.com/S104389422J?prj=prj_hd4RXTVw6bj0CWrP2FP2ITlBSh74",
   },
@@ -255,27 +223,27 @@ export default function HomePage() {
           <CollapsibleSection
             id="business"
             sectionTitle="Business"
-            sectionSubtitle="Marketing Digital, Inteligencia Artificial, Ventas y Automatizacion para emprendedores"
-            coverImage="/cover-business.jpg"
-            coverAlt="Emprendedores trabajando en oficina moderna"
+            sectionSubtitle=""
+            coverImage="/cover-business.png"
+            coverAlt="EMK Business - Personas trabajando y celebrando exito empresarial"
             courses={businessCourses}
           />
 
           <CollapsibleSection
             id="alma"
             sectionTitle="By Alma"
-            sectionSubtitle="Autoconocimiento, bienestar, yoga, meditacion y espiritualidad practica para una vida plena"
-            coverImage="/cover-alma.jpg"
-            coverAlt="Mujer meditando en la naturaleza"
+            sectionSubtitle=""
+            coverImage="/cover-alma.png"
+            coverAlt="EMK by Alma - Personas meditando en la playa al atardecer"
             courses={almaCourses}
           />
 
           <CollapsibleSection
             id="kids"
             sectionTitle="Kids"
-            sectionSubtitle="Educacion, estimulacion, juegos y aprendizaje consciente para ninos y padres formadores"
-            coverImage="/cover-kids.jpg"
-            coverAlt="Ninos felices aprendiendo y jugando"
+            sectionSubtitle=""
+            coverImage="/cover-kids.png"
+            coverAlt="EMK Kids - Ninos felices jugando y aprendiendo"
             courses={kidsCourses}
           />
         </div>

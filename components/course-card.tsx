@@ -4,13 +4,12 @@ import { ExternalLink } from "lucide-react"
 
 interface CourseCardProps {
   title: string
-  description: string
   image: string
   link: string
   index: number
 }
 
-export function CourseCard({ title, description, image, link, index }: CourseCardProps) {
+export function CourseCard({ title, image, link, index }: CourseCardProps) {
   return (
     <article
       className="animate-fade-in-up group flex flex-col overflow-hidden rounded-2xl border border-border/60 bg-card transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/5"
@@ -24,8 +23,7 @@ export function CourseCard({ title, description, image, link, index }: CourseCar
         />
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <h3 className="mb-2 text-lg font-bold leading-tight text-foreground">{title}</h3>
-        <p className="mb-5 flex-1 text-sm leading-relaxed text-muted-foreground">{description}</p>
+        <h3 className="mb-5 flex-1 text-lg font-bold leading-tight text-foreground">{title}</h3>
         <a
           href={link}
           target="_blank"
